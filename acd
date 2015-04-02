@@ -456,7 +456,7 @@ if __name__ == '__main__':
                          help="EMAIL login for Amazon Cloud Drive")
     fs.parser.add_option(mountopt="password", metavar="PASSWORD",
                          help="PASSWORD password for Amazon Cloud Drive")
-    fs.parser.add_option(mountopt="cachefree",
+    fs.parser.add_option(mountopt="cachefree", type="float",
                          help="What percentage of the filecache drive we must keep free (defaults to 10%)")
 
     fs.parse(values=fs, errex=1)
